@@ -1,0 +1,19 @@
+# fail2ban configs
+
+These are various customizations I've done to fail2ban.
+
+## Usage
+
+```
+mkdir /srv/fail2ban-local
+cd /srv/fail2ban-local
+git clone https://github.com/vrillusions/fail2ban-configs.git .
+ln -s /srv/fail2ban-local/jail.local /etc/fail2ban/jail.local
+...
+```
+
+One of these days I'll get around to automating that last step since it leaves room for error
+
+## Future
+
+Instead of having just the local modifications, version control the entire thing
