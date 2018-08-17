@@ -5,7 +5,8 @@
 # defined using space separator.
 ignoreip = 127.0.0.1/8 svr2.vrillusions.com
 
-[ssh]
+[sshd]
+enabled = true
 
 # ban ssh for an hour
 bantime  = 3600

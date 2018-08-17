@@ -6,6 +6,6 @@
 # Notes.:  command executed once at the start of Fail2Ban.
 # Values:  CMD
 #
-actionstart = iptables -N fail2ban-<name>
-              iptables -A fail2ban-<name> -j RETURN
-              iptables -I <chain> 2 -p <protocol> -m multiport --dports <port> -j fail2ban-<name>
+actionstart = iptables -N f2b-<name>
+              iptables -A f2b-<name> -j RETURN
+              iptables -I <chain> 2 -p <protocol> -m multiport --dports <port> -j f2b-<name>
